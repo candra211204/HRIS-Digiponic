@@ -1,0 +1,238 @@
+:root {
+    --primary-color : #000;
+    --secondary-color-1 : #F9F9F9;
+    --secondary-color-2 : #0edfb9;
+    --secondary-color-3 : red;
+    --optional-color-1 : #76808A;
+    --optional-color-2 : #191c24;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Eye Password Peek Start */
+.password-icon-eye {
+    display: none;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+}
+
+.password-icon-eye-slash {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+}
+/* Eye Password Peek End */
+
+/* Pagination Top Start */
+.pagination-top-box {
+    display: none;
+}
+/* Pagination Top End */
+
+/* Search Start */
+.search-input{
+    color: var(--primary-color);
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    margin: 1em 0;
+    padding: .6em 1em;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    transition: .2s;
+}
+
+.search-input::placeholder {
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: .5s;
+}
+
+.search-input:focus::placeholder {
+    color: var(--secondary-color-2);
+}
+
+.search-input:focus {
+    color: var(--secondary-color-2);
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--secondary-color-2);
+}
+
+.search-button {
+    color: var(--primary-color);
+}
+
+.search-button:hover {
+    color: var(--secondary-color-2);
+}
+
+.search-button-text {
+    display: none;
+}
+/* Search End */
+
+/* Form Input Start */
+.form-input{
+    color: var(--primary-color);
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    margin: 1em 0;
+    padding: .6em 1em;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    transition: .2s;
+}
+
+.form-input::placeholder {
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: .5s;
+}
+
+.form-input:focus::placeholder {
+    color: var(--secondary-color-2);
+}
+
+.form-input:focus {
+    color: var(--secondary-color-2);
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--secondary-color-2);
+}
+
+.form-modal {
+    flex-direction: column;
+}
+
+.form-left, 
+.form-right {
+    width: 100%;
+}
+/* Form Input End */
+
+/* Pagination Bottom Start */
+.pagination-bottom-box {
+    display: block;
+}
+/* Pagination Bottom End */
+
+/* Information Start */
+.information-box {
+    flex-direction: column;
+}
+
+.apllicants-box {
+    margin-left: .5em;
+}
+/* Information End */
+
+/* Change Profile And Signature Start */
+trix-toolbar [data-trix-button-group="file-tools"] {
+    display: none;
+}
+
+trix-toolbar [data-trix-button-group] {
+    background-color: whitesmoke;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.preview {
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+    border: 1px solid red;
+}
+
+.modal-lg {
+    max-width: 1000px !important;
+}
+
+.signature-pad {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 200px;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.signature-pad {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+}
+/* Change Profile And Signature End */
+
+@media only screen and (min-width: 768px) {
+    /* Pagination Top Start */
+    .pagination-top-box {
+        width: 25%;
+        display: block;
+    }
+    /* Pagination Top End */
+
+    /* Search Start */
+    .search-top-box {
+        width: 50%;
+    }
+
+    .search-button-text {
+        display: inline;
+    }
+
+    .search-button-top-box {
+        width: 25%;
+    }
+    /* Search End */
+
+    /* Form Input Start */
+    .form-modal {
+        flex-direction: row;
+    }
+
+    .form-left, 
+    .form-right {
+        width: 50%;
+    }
+    /* Form Input End */
+
+    /* Pagination Bottom Start */
+    .pagination-bottom-box {
+        display: none;
+    }
+    /* Pagination Bottom End */
+
+    /* Information Start */
+    .information-box {
+        flex-direction: row;
+    }
+
+    .apllicants-box {
+        margin-left: 5em;
+    }
+    /* Information End */
+}
